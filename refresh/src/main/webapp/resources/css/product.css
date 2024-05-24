@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .main_slide img {
     width: 100%;
     height: auto;
@@ -738,8 +737,6 @@ button.swiper-pagination-bullet {
     text-align: center;
 }
 
-.xans-product-listrecommend .prdList > li {
-    ;}
 
 .xans-product-menupackage {
     margin: 0;
@@ -3108,11 +3105,11 @@ div.ec-base-help ul li {
 
 .ec-base-tab.grid7 .menu li {
     width: 14.8%;
-    width: 15% \0/;
+    width: 15%  0;
 }
 
 .ec-base-tab.grid7 .menu li:first-child {
-    width: 13% \0/;
+    width: 13% 0;
 }
 
 .ec-base-tab.gFlex .menu {
@@ -9310,3 +9307,4 @@ body.center .xans-layout-multishoplist.list > ul {
     cursor: pointer;
     background: #f1f1f1;
 }
+
