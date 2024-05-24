@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
     <head>
@@ -36,86 +37,14 @@
             <div class="all_width">
                 <div class="xans-element- xans-layout xans-layout-logotop top_logo ">
                     <a href="/index.html">
-                        <!--
-	■ 쇼핑몰 로고
-	위쪽 화면의 이미지에 마우스오버 > 편집 > 속성 들어가서 수정해주세요.
-	링크칸은 비워두세요!
-	이미지 사이즈 변경 원하시는경우 아래 html의 height:24px를 수정해주세요.
--->
                         <img src="/resources/img/logo/logo.png" style="height:24px;"/>
                     </a>
                 </div>
                 <div class="top_right">
-                    <div class="top_search_best">
-                        <div class="search_rolling">
-                            <!--
-	■ 상단 롤링되는 검색어
-
-	"" 따옴표 사이에는 클릭시 이동할 주소를 넣어주세요.
-	예시) <a href="https://naver.com">검색어</a>
--->
-                            <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%ED%8C%94">
-                                <b>1.</b>
-                                반팔
-                            </a>
-                            <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%ED%8C%94%EB%8B%88%ED%8A%B8">
-                                <b>2.</b>
-                                반팔니트
-                            </a>
-                            <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EC%85%94%EC%B8%A0">
-                                <b>3.</b>
-                                셔츠
-                            </a>
-                            <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EA%B0%80%EB%94%94%EA%B1%B4">
-                                <b>4.</b>
-                                가디건
-                            </a>
-                            <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%EB%B0%94%EC%A7%80">
-                                <b>5.</b>
-                                반바지
-                            </a>
-                        </div>
-                        <div class="bt_top_search" id="bt_top_search">
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </div>
-                    <div class="search_list">
-                        <div class="search_title">실시간 베스트 키워드</div>
-                        <!--
-	■ 상단 롤링되는 검색어
-
-	"" 따옴표 사이에는 클릭시 이동할 주소를 넣어주세요.
-	예시) <a href="https://naver.com">검색어</a>
--->
-                        <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%ED%8C%94">
-                            <b>1.</b>
-                            반팔
-                        </a>
-                        <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%ED%8C%94%EB%8B%88%ED%8A%B8">
-                            <b>2.</b>
-                            반팔니트
-                        </a>
-                        <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EC%85%94%EC%B8%A0">
-                            <b>3.</b>
-                            셔츠
-                        </a>
-                        <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EA%B0%80%EB%94%94%EA%B1%B4">
-                            <b>4.</b>
-                            가디건
-                        </a>
-                        <a href="https://lookple.com/product/search.html?banner_action=&amp;keyword=%EB%B0%98%EB%B0%94%EC%A7%80">
-                            <b>5.</b>
-                            반바지
-                        </a>
-                    </div>
                     <div class="top_search">
                         <form id="searchBarForm" name="" action="/product/search.html" method="get" target="_self" enctype="multipart/form-data">
                             <input id="banner_action" name="banner_action" value="" type="hidden"/>
                             <div class="xans-element- xans-layout xans-layout-searchheader ">
-                                <!--
-					$product_page=/product/detail.html
-			   		$category_page=/product/list.html
-				-->
                                 <fieldset>
                                     <legend>검색</legend>
                                     <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="검색어를 입력하세요" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"/>
@@ -136,10 +65,6 @@
                         <div class="top_sub">
                             <a href="/member/modify.html">회원정보수정</a>
                             <a href="/myshop/wish_list.html">관심상품</a>
-                            <a href="/myshop/mileage/historyList.html">적립금</a>
-                            <a href="/myshop/board_list.html">나의게시물</a>
-                            <a href="/myshop/coupon/coupon.html">쿠폰조회</a>
-                            <a href="/product/recent_view_product.html">최근본상품</a>
                             <a href="/myshop/index.html">마이페이지</a>
                         </div>
                     </div>
@@ -149,103 +74,41 @@
                 <div class="all_width">
                     <div class="left_logo">
                         <a href="/index.html">
-                            <!--
-	■ 쇼핑몰 로고
-	위쪽 화면의 이미지에 마우스오버 > 편집 > 속성 들어가서 수정해주세요.
-	링크칸은 비워두세요!
-	이미지 사이즈 변경 원하시는경우 아래 html의 height:24px를 수정해주세요.
--->
                             <img src="/web/upload/category/editor/2023/10/06/6a244682cb4bed31dd3b0184a94beeda.png" style="height:24px;"/>
                         </a>
                     </div>
                     <div class="xans-element- xans-layout xans-layout-category top_cate">
                         <ul>
                             <li class="xans-record-">
-                                <a href="/category/best/120/">BEST</a>
+                                <a href="/product.do">OUTER</a>
                                 <ul class="all_sub"></ul>
                             </li>
                             <li class="xans-record-">
-                                <a href="/category/new-5/118/">NEW 5%</a>
+                                <a href="/product.do">SUIT</a>
                                 <ul class="all_sub"></ul>
                             </li>
                             <li class="xans-record-">
-                                <a href="/category/time-sale-10/150/">TIME SALE 10%</a>
+                                <a href="/product.do">SHIRT</a>
                                 <ul class="all_sub"></ul>
                             </li>
                             <li class="xans-record-">
-                                <a href="/category/outer/24/">OUTER</a>
+                                <a href="/product.do">TOP</a>
                                 <ul class="all_sub"></ul>
                             </li>
                             <li class="xans-record-">
-                                <a href="/category/suit/25/">SUIT</a>
+                                <a href="/product.do">BOTTOM</a>
                                 <ul class="all_sub"></ul>
                             </li>
                             <li class="xans-record-">
-                                <a href="/category/shirt/27/">SHIRT</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/top/26/">TOP</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/knit/126/">KNIT</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/bottom/42/">BOTTOM</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/shoes/43/">SHOES</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/acc/135/">ACC</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/11-event/127/">1+1 EVENT</a>
-                                <ul class="all_sub"></ul>
-                            </li>
-                            <li class="xans-record-">
-                                <a href="/category/당일발송/147/">당일발송</a>
+                                <a href="/product.do">ACC</a>
                                 <ul class="all_sub"></ul>
                             </li>
                         </ul>
                     </div>
                     <div class="top_menu">
                         <div>
-                            <div class="xans-element- xans-layout xans-layout-multishoplist thumb ">
-                                <ul class="xans-element- xans-layout xans-layout-multishoplistitem">
-                                    <li class="xans-record-">
-                                        <a href="http://lookple.com/">
-                                            <img src="http://img.cafe24.com/img/common/global/ko_KR_32x24.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="xans-record-">
-                                        <a href="http://cn.lookple.com/">
-                                            <img src="http://img.cafe24.com/img/common/global/zh_CN_32x24.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="xans-record-">
-                                        <a href="http://jp.lookple.com/">
-                                            <img src="http://img.cafe24.com/img/common/global/ja_JP_32x24.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="xans-record-">
-                                        <a href="http://en.lookple.com/">
-                                            <img src="http://img.cafe24.com/img/common/global/en_US_32x24.png" alt=""/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="/member/join.html" class="xans-element- xans-layout xans-layout-statelogoff ">
-                                회원가입
-<div class="join_box">+ 3,000</div>
-                            </a>
-                            <a href="/member/login.html" class="xans-element- xans-layout xans-layout-statelogoff ">로그인
-</a>
+                            <a href="/member/join.html" class="xans-element- xans-layout xans-layout-statelogoff ">회원가입</a>
+                            <a href="/member/login.html" class="xans-element- xans-layout xans-layout-statelogoff ">로그인</a>
                             <a href="/myshop/order/list.html">주문조회</a>
                             <a href="/myshop/index.html">마이페이지</a>
                         </div>
@@ -259,7 +122,6 @@
                                 <a href="/board/index.html" class="xans-record-">FAQ</a>
                                 <a href="/board/qa/6/" class="xans-record-">Q&A</a>
                                 <a href="/board/review/4/" class="xans-record-">REVIEW</a>
-                                <a href="/board/membership/5/" class="xans-record-">MEMBERSHIP</a>
                             </div>
                         </span>
                     </div>
@@ -276,27 +138,6 @@
                 <div id="main_slide">
                     <div class="swiper-container m_slide">
                         <div class="swiper-wrapper">
-                            <!--
-	■ 메인 슬라이드 이미지 수정방법 :
-	위쪽 화면의 이미지에 마우스 오버 > 편집 > 속성 들어가 수정해주세요.
-	* 이미지 사이즈 : 1912*700px (세로사이즈 변경가능)
-	* 링크칸에는 이미지 클릭시 이동할 주소를 입력해주세요.
-	* 링크가 없으신 경우에는 링크칸을 공백으로 두지 마시고 / ← 입력해주세요.
-
-	■ 편집버튼이 안보이신다면?
-	위쪽 화면에서 스크롤하여 이미지에 다시 마우스오버 해주시거나,
-	현재창 왼쪽 하단의 '분할보기' 아이콘 왼쪽있는 '화면보기' 아이콘 클릭 후 편집해주세요.
-
-	■ 이미지 개수를 늘리고싶을땐?
-	1) 아래 html 소스 중, 
-	<div class="swiper-slide">~~~</div> 1줄짜리 소스를 복사해주세요.
-	2) 22번째 줄 이후에 1번에서 복사한 소스를 붙여넣어주세요.
-	3) 현재 편집창 상단의 [미리보기] 클릭 (닫기버튼 우측에있어요)
-	4) 맨 위에 뜨는 이미지에 마우스 오버 > 편집 > 속성 들어가서 이미지 업로드 후 저장
-
-	■ 추가한 이미지가 변경되지 않는 경우?
-	복사한 소스 중간에 있는 년도(2023) 숫자 지우신 후, 상단의 미리보기 → 엑박으로 변한 이미지에 마우스 오버 > 편집 > 속성 들어가서 수정해주세요.
--->
                             <div class="swiper-slide">
                                 <a href="https://lookple.com/product/%EB%A3%A9-%EB%A0%88%EC%9D%B4%EA%B1%B0%EC%8A%A4-%EB%B0%94%EC%9D%B4%EC%98%A4%EC%9B%8C%EC%8B%B1-%EC%98%A4%EB%B2%84%ED%95%8F-%EC%BF%A8%EB%A7%81-%EB%A6%B0%EB%84%A8-%EC%85%94%EC%B8%A0/6146/category/27/display/1/">
                                     <img src="/resources/img/main2/34a67336242ec95d422de7028210fbbf.jpg" style="width:40%"/>
@@ -406,9 +247,6 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="xans-element- xans-product xans-product-listmain-5 xans-product-listmain xans-product-5 ec-base-product main_over">
-                                        <!--
-	$count = 9
--->
                                         <h2 class="title">TOP</h2>
                                         <ul class="prdList">
                                             <li id="anchorBoxId_6205" class="xans-record-">

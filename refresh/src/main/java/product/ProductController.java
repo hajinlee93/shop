@@ -1,4 +1,4 @@
-package main;
+package product;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
@@ -8,10 +8,10 @@ import number.vo.NumberVO;
 
 @Controller
 @RequestMapping("/")
-public class MainController {
+public class ProductController {
 	
-   @RequestMapping("main.do")
+   @RequestMapping("product.do")
    public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
-      return "/common/main";
+      return "/common/product";
    }
 }
