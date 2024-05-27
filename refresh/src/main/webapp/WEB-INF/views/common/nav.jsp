@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/product.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/mypage.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/modify.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/order_list.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
@@ -104,8 +105,8 @@
 								class="xans-element- xans-layout xans-layout-statelogoff ">회원가입</a>
 							<a href="/login.do"
 								class="xans-element- xans-layout xans-layout-statelogoff ">로그인</a>
-							<a href="/myshop/order/list.html">주문조회</a> <a
-								href="/myshop/index.html">마이페이지</a>
+							<a href="/order_list.do">주문조회</a> <a
+								href="/mypage.do">마이페이지</a>
 						</div>
 						<span class="top_board"> <span> <b>COMMUNITY</b> <?xml version="1.0" ?>
 							<svg height="10px" id="Layer_1"
