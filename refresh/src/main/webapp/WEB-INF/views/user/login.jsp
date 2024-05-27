@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-<%@ include file="nav.jsp"%>
+<%@ include file="../common/nav.jsp"%>
 <hr class="layout" />
 <div id="wrap">
 	<div id="container">
@@ -102,6 +102,51 @@
 						</div>
 					</div>
 				</form>
+
+				<!-- 비회원 주문조회 start -->
+
+				<form id="historyNoLoginForm" name=""
+					action="/exec/front/MyShop/OrderHistoryLogin/" 
+					target="_self" enctype="multipart/form-data">
+					<input id="order_detail_url" name="order_detail_url"
+						value="/myshop/order/list.html" type="hidden"><div
+							class="xans-element- xans-myshop xans-myshop-orderhistorynologin ec-base-box ">
+							<!--
+        $orderDetailUrl = /myshop/order/list.html
+    -->
+							<div class="titleArea">
+								<h2>비회원 로그인</h2>
+								<p class="sub">비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+							</div>
+							<dl class="ec-base-desc gBlank20">
+								<dt>주문자명</dt>
+								<dd>
+									<input id="order_name" name="order_name" fw-filter="isFill"
+										fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder=""
+										value="" type="text">
+								</dd>
+								<dt>주문번호</dt>
+								<dd>
+									<input id="order_id" name="order_id" maxlength="18"
+										fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg=""
+										value="" type="text" placeholder="주문번호" title="주문번호">
+								</dd>
+								<dt>비회원주문 비밀번호</dt>
+								<dd>
+									<input id="order_password" name="order_password"
+										fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" value=""
+										type="password">
+								</dd>
+							</dl>
+							<p class="ec-base-button gColumn">
+								<button type="submit" class="btnNormal sizeM">조회</button>
+							</p>
+						</div>
+				</form>
+				<!-- 비회원 주문조회 end -->
+
+
+
 			</div>
 		</div>
 		<hr class="layout" />
@@ -114,6 +159,6 @@
 	<a href="#top"><i class="fa fa-angle-up"></i></a> <a href="#footer"><i
 		class="fa fa-angle-down"></i></a>
 </div>
-<%@ include file="footer.jsp"%>
+<%@ include file="../common/footer.jsp"%>
 </body>
 </html>

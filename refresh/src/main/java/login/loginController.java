@@ -12,6 +12,6 @@ public class loginController {
 	
    @RequestMapping("login.do")
    public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
-      return "/common/login";
+      return "/user/login";
    }
 }

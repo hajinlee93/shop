@@ -1,4 +1,4 @@
-package join;
+package community;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
@@ -8,10 +8,10 @@ import number.vo.NumberVO;
 
 @Controller
 @RequestMapping("/")
-public class joinController {
+public class noticeController {
 	
-   @RequestMapping("join.do")
+   @RequestMapping("notice.do")
    public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
-      return "/user/join";
+      return "/community/notice";
    }
 }

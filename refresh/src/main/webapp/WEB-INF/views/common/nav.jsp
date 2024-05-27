@@ -89,9 +89,9 @@
 					</div>
 					<div class="top_menu">
 						<div>
-							<a href="/member/join.html"
+							<a href="/join.do"
 								class="xans-element- xans-layout xans-layout-statelogoff ">회원가입</a>
-							<a href="/member/login.html"
+							<a href="/login.do"
 								class="xans-element- xans-layout xans-layout-statelogoff ">로그인</a>
 							<a href="/myshop/order/list.html">주문조회</a> <a
 								href="/myshop/index.html">마이페이지</a>
@@ -101,10 +101,9 @@
 						</span>
 							<div
 								class="xans-element- xans-layout xans-layout-boardinfo top_sub">
-								<a href="/board/notice/1/" class="xans-record-">NOTICE</a> <a
-									href="/board/index.html" class="xans-record-">FAQ</a> <a
-									href="/board/qa/6/" class="xans-record-">Q&A</a> <a
-									href="/board/review/4/" class="xans-record-">REVIEW</a>
+								<a href="/notice.do" class="xans-record-">NOTICE</a> 
+								<a href="/board/index.html" class="xans-record-">FAQ</a> 
+								<a href="/board/qa/6/" class="xans-record-">Q&A</a>
 							</div>
 						</span>
 					</div>

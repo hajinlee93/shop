@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-<%@ include file="nav.jsp"%>
+<%@ include file="../common/nav.jsp"%>
 <hr class="layout" />
 <div id="wrap">
 	<div id="container">
@@ -2260,6 +2260,6 @@
 	<a href="#top"><i class="fa fa-angle-up"></i></a> <a href="#footer"><i
 		class="fa fa-angle-down"></i></a>
 </div>
-<%@ include file="footer.jsp"%>
+<%@ include file="../common/footer.jsp"%>
 </body>
 </html>

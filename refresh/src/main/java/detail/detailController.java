@@ -12,6 +12,6 @@ public class detailController {
 	
    @RequestMapping("detail.do")
    public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
-      return "/common/detail";
+      return "/product/detail";
    }
 }

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-<%@ include file="nav.jsp"%>
+<%@ include file="../common/nav.jsp"%>
 <div id="wrap">
 	<div id="container">
 		<div id="contents">
@@ -3043,6 +3043,6 @@
 	<a href="#top"><i class="fa fa-angle-up"></i></a> <a href="#footer"><i
 		class="fa fa-angle-down"></i></a>
 </div>
-<%@ include file="footer.jsp"%>
+<%@ include file="../common/footer.jsp"%>
 </body>
 </html>

@@ -12,6 +12,6 @@ public class ProductController {
 	
    @RequestMapping("product.do")
    public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
-      return "/common/product";
+      return "/product/product";
    }
 }
