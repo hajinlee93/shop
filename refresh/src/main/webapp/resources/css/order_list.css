@@ -6459,18 +6459,6 @@ h1,h3 {
     height: 10px;
 }
 
-#header .inner .top_insta a {
-    background: url('/web/upload/day224/pc_insta_border.png');
-}
-
-#header .top_cart > a {
-    background: url('/web/upload/day224/pc_icon_cart.png');
-}
-
-#header .top_mypage > a {
-    background: url('/web/upload/day224/pc_icon_mypage.png');
-}
-
 #header {
     box-sizing: border-box;
     font-size: 0;
