@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/modify.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/order_list.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/cart.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/list_detail.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
@@ -66,10 +67,10 @@
 						</a>
 					</div>
 					<div class="top_mypage">
-						<a style="background-size: contain;" href="/myshop/index.html"></a>
+						<a style="background-size: contain;" href="/mypage.do"></a>
 						<div class="top_sub">
 							<a href="/modify.do">회원정보수정</a> <a
-								href="/myshop/wish_list.html">관심상품</a> <a
+								href="/wish_list.do">관심상품</a> <a
 								href="/mypage.do">마이페이지</a>
 						</div>
 					</div>
@@ -78,7 +79,7 @@
 			<div class="top_cate_box">
 				<div class="all_width">
 					<div class="left_logo">
-						<a href="/index.html"> <img
+						<a href="/main.do"> <img
 							src="/web/upload/category/editor/2023/10/06/6a244682cb4bed31dd3b0184a94beeda.png"
 							style="height: 24px;" />
 						</a>
@@ -121,8 +122,8 @@
 							<div
 								class="xans-element- xans-layout xans-layout-boardinfo top_sub">
 								<a href="/notice.do" class="xans-record-">NOTICE</a> <a
-									href="/board/index.html" class="xans-record-">FAQ</a> <a
-									href="/board/qa/6/" class="xans-record-">Q&A</a>
+									href="/notice.do" class="xans-record-">FAQ</a> <a
+									href="/notice.do" class="xans-record-">Q&A</a>
 							</div>
 						</span>
 					</div>

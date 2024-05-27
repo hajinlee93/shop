@@ -17,7 +17,7 @@
 							<span>현재 위치</span>
 							<ol>
 								<li><a href="/">홈</a></li>
-								<li><a href="/board/index.html">게시판</a></li>
+								<li><a href="/notice.do">게시판</a></li>
 								<li title="현재 위치"><strong>NOTICE</strong></li>
 							</ol>
 						</div>
@@ -29,11 +29,10 @@
 						</div>
 						<div
 							class="xans-element- xans-layout xans-layout-boardinfo faq_board_list">
-							<a href="/board/notice/1/" class="xans-record-">NOTICE</a> <a
-								href="/board/index.html" class="xans-record-">FAQ</a><a
-								href="/board/qa/6/" class="xans-record-">Q&A</a><a
-								href="/board/review/4/" class="xans-record-">REVIEW</a><a
-								href="/board/membership/5/" class="xans-record-">MEMBERSHIP</a>
+							<a href="/notice.do" class="xans-record-">NOTICE</a> <a
+								href="/notice.do" class="xans-record-">FAQ</a><a
+								href="/notice.do" class="xans-record-">Q&A</a><a
+								href="/notice.do" class="xans-record-">REVIEW</a>
 						</div>
 						<p class="imgArea"></p>
 					</div>
@@ -80,7 +79,7 @@
 									<td>공지</td>
 									<td class="displaynone"></td>
 									<td class="subject left txtBreak"><strong> <a
-											href="/article/notice/1/67121/" style="color: #555555;">네이버페이
+											href="/list_detail.do" style="color: #555555;">네이버페이
 												반품 공지사항</a> <span class="txtInfo"></span></strong></td>
 									<td>룩플 LOOKPLE</td>
 									<td class=""><span class="txtNum">2021-08-03</span></td>
