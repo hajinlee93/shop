@@ -36,4 +36,5 @@
 	<context:component-scan base-package="mypage" />
 	<context:component-scan base-package="modify" />
 	<context:component-scan base-package="order_list" />
+	<context:component-scan base-package="cart" />
 </beans:beans>

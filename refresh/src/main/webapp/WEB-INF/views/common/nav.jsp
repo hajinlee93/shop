@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/mypage.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/modify.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/order_list.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/cart.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
@@ -58,7 +59,7 @@
 					</div>
 					<div
 						class="xans-element- xans-layout xans-layout-orderbasketcount top_cart ">
-						<a href="/order/basket.html"> <span
+						<a href="/cart.do"> <span
 							class="EC-Layout_Basket-count-display"> <span
 								class="EC-Layout-Basket-count">0</span>
 						</span>
