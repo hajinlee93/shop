@@ -7,6 +7,7 @@
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 
     <%@ include file="nav.jsp" %>
+    <script src="/resources/js/common.js"></script>
     <hr class="layout"/>
     <div id="wrap">
         <div id="container">
