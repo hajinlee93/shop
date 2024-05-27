@@ -5,17 +5,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
-    <head>
-<!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="/resources/css/main.css"/>
-<link rel="stylesheet" type="text/css" href="/resources/css/user.css"/>
-<style type="text/css"></style>
-<title>shop</title>
-</head>
-<body id="main">
+
     <%@ include file="nav.jsp" %>
     <hr class="layout"/>
     <div id="wrap">

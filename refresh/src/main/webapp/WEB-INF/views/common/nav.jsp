@@ -1,6 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<head>
+<!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/user.css"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/login.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/join.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/detail.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/product.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<style type="text/css"></style>
+<title>shop</title>
+</head>
+<body id="main">
 <div id="header">
 	<div class="inner">
 		<div class="all_width">
