@@ -10,5 +10,6 @@
 	
 	<typeAliases>
 		<typeAlias alias="numberVo" type="number.vo.NumberVO"/>
+		<typeAlias alias="loginVo" type="login.vo.LoginVO"/>
 	</typeAliases>
 </configuration>

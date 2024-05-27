@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 <%@ include file="../common/nav.jsp"%>
+<script src="/resources/js/common.js"></script>
 <hr class="layout" />
 <div id="wrap">
 	<div id="container">
@@ -47,26 +48,20 @@
 								</div>
 
 								<legend>회원로그인</legend>
-								<label class="id ePlaceholder" title="아이디"><input
-									id="member_id" name="member_id" fw-filter="isFill"
-									fw-label="아이디" fw-msg="" class="inputTypeText" placeholder=""
-									value="" type="text" /></label> <label class="password ePlaceholder"
-									title="비밀번호"><input id="member_passwd"
-									name="member_passwd" fw-filter="isFill&isMin[4]&isMax[16]"
-									fw-label="패스워드" fw-msg="" autocomplete="off" value=""
-									type="password" /></label>
+								<label class="id ePlaceholder" title="아이디">
+								<input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" class="inputTypeText" placeholder="" value="" type="text" />
+								</label>
+								<label class="password ePlaceholder" title="비밀번호">
+								<input id="member_passwd" name="member_passwd" fw-filter="isFill&isMin[4]&isMax[16]" fw-label="패스워드" fw-msg="" autocomplete="off" value="" type="password" /></label>
 								<p class="security">
-									<img
-										src="//img.echosting.cafe24.com/design/skin/default/member/ico_access.gif"
-										alt="보안접속" /> 보안접속 <input id="member_check_save_id0"
-										name="check_save_id" fw-filter="" fw-label="아이디저장" fw-msg=""
-										value="T" type="checkbox" /><label
-										for="member_check_save_id0">아이디 저장</label>
+									<img src="//img.echosting.cafe24.com/design/skin/default/member/ico_access.gif" alt="보안접속" /> 보안접속 
+									<input id="member_check_save_id0" name="check_save_id" fw-filter="" fw-label="아이디저장" value="T" type="checkbox" />
+									<label for="member_check_save_id0">아이디 저장</label>
 								</p>
 
 								<div class="ec-base-button gColumn">
 									<a href="#none" class="btnNormal sizeM"
-										onclick="MemberAction.login('member_form_9621710545'); return false;">로그인</a>
+										onclick="loginInit.loginCheck();">로그인</a>
 								</div>
 
 								<ul>
@@ -156,4 +151,63 @@
 <hr class="layout" />
 <%@ include file="../common/footer.jsp"%>
 </body>
+<script type="text/javascript">
+let memberId; 
+let memberPasswd;
+const loginInit = {
+	empty : function(){
+		
+		/*********** 초기화 START ***********/
+		$('#member_id').val("");		//아이디
+		$('#member_passwd').val("");	//비밀번호
+		/*********** 초기화 END ***********/
+		
+	},
+	
+	loginCheck : function(){
+		
+		if(loginInit.loginVali()){
+			
+			let dataUrl = "loginCheck.do";												//매핑 URL
+			let dataParam = {"memberId" : memberId, "memberPasswd" : memberPasswd};		//파라미터
+			
+			init.ajaxOriginCall(dataUrl, dataParam, loginInit.loginCallback);
+			
+		} else {
+			return false;
+		}
+		
+		
+	},
+	
+	//유효성검사
+	loginVali : function(){
+		
+		let returnValue = "";							//데이터 값이 존재여부
+		memberId = $('#member_id').val();				//아이디
+		memberPasswd = $('#member_passwd').val();		//비밀번호
+		
+		if(!memberId && memberId == ""){				//아이디 입력값이 비었을 경우
+			alert("아이디를 입력해 주세요.");
+			return false;
+		} else if(!memberPasswd && memberPasswd == ""){	//비밀번호 입력값이 비었을 경우
+			alert("비밀번호를 입력해 주세요.");
+			return false;
+		} else {
+			if(memberId && memberPasswd){				//아이디, 비밀번호 값이 존재할 경우
+				returnValue = "ok";
+			}
+			return returnValue;
+		}
+		
+	},
+	
+	loginCallback : function(resp){
+		console.log("ajaxCallback _ resp", resp);
+	}
+};
+
+loginInit.empty();
+
+</script>
 </html>

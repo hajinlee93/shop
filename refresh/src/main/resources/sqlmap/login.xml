@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵핑될 DAO 인터페이스의 Full name 을 줍니다. -->
+<mapper namespace="LoginDAO">
+	
+	<!-- 고객정보 search -->
+	<select id="searchUserInfo" parameterType="loginVo" resultType="loginVo">
+	SELECT 
+		USER_NO	
+		,USER_ID			
+		,USER_PW			
+		,USER_NAME		
+		,GENDER			
+		,USER_JUMIN		
+		,MOBILE_CARRIER
+		,PHONE			
+		,EMAIL			
+		,ZIPCODE			
+		,ADDRESS			
+		,DETAILED_ADDRESS
+		,RGST_TIME	
+		,UDT_TIME
+		,GUBN			
+	  FROM USERS
+	 WHERE USER_ID = #{userId}
+	</select>
+</mapper>
