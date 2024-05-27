@@ -5,8 +5,6 @@
 <div id="wrap">
 	<div id="container">
 		<div id="contents">
-			<script src="/resources/js/swiper_min.js"></script>
-			<script src="/resources/js/min.js"></script>
 			<div class="xans-element- xans-product xans-product-menupackage ">
 				<div
 					class="xans-element- xans-product xans-product-headcategory title ">

@@ -11,8 +11,6 @@
     <div id="wrap">
         <div id="container">
             <div id="contents">
-                <script src="/resources/js/swiper_min.js"></script>
-                <script src="/resources/js/min.js"></script>
                 <div id="main_slide">
                     <div class="swiper-container m_slide">
                         <div class="swiper-wrapper">
