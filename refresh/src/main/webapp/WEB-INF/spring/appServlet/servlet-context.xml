@@ -33,4 +33,6 @@
 	<context:component-scan base-package="login" />
 	<context:component-scan base-package="join" />
 	<context:component-scan base-package="community" />
+	<context:component-scan base-package="mypage" />
+	<context:component-scan base-package="modify" />
 </beans:beans>

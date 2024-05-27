@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/join.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/detail.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/product.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/mypage.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/modify.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
@@ -64,9 +66,9 @@
 					<div class="top_mypage">
 						<a style="background-size: contain;" href="/myshop/index.html"></a>
 						<div class="top_sub">
-							<a href="/member/modify.html">회원정보수정</a> <a
+							<a href="/modify.do">회원정보수정</a> <a
 								href="/myshop/wish_list.html">관심상품</a> <a
-								href="/myshop/index.html">마이페이지</a>
+								href="/mypage.do">마이페이지</a>
 						</div>
 					</div>
 				</div>
