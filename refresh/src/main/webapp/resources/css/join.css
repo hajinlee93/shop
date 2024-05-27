@@ -227,10 +227,6 @@
     border-bottom-color: #000 !important;
 }
 
-#header .top_cart span > span {
-    background: #000
-}
-
 #header .search_list a > b,.top_search_best a > b {
     color: #1b1b1b;
 }
@@ -2346,11 +2342,11 @@ div.ec-base-help ul li {
 
 .ec-base-tab.grid7 .menu li {
     width: 14.8%;
-    width: 15% \0/;
+    width: 15%;
 }
 
 .ec-base-tab.grid7 .menu li:first-child {
-    width: 13% \0/;
+    width: 13%;
 }
 
 .ec-base-tab.gFlex .menu {
@@ -6591,18 +6587,6 @@ h1,h3 {
     height: 10px;
 }
 
-#header .inner .top_insta a {
-    background: url('/web/upload/day224/pc_insta_border.png');
-}
-
-#header .top_cart > a {
-    background: url('/web/upload/day224/pc_icon_cart.png');
-}
-
-#header .top_mypage > a {
-    background: url('/web/upload/day224/pc_icon_mypage.png');
-}
-
 #header {
     box-sizing: border-box;
     font-size: 0;
@@ -6656,39 +6640,6 @@ h1,h3 {
     right: 50px;
     top: 60px;
     margin-top: -19px;
-}
-
-#header .inner .top_mypage,#header .inner .top_cart {
-    position: relative;
-    margin-left: 15px;
-    display: inline-block;
-    padding: 15px 0;
-}
-
-#header .inner .top_mypage > a,#header .inner .top_cart > a {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#header .inner .top_cart > a > span > span {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    right: -27px;
-    top: -7px;
-    color: #fff;
-    font-size: 11px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 15px;
-}
-
-#header .inner .top_mypage > a {
-    width: 21px
 }
 
 #header .inner .top_search {
@@ -6900,15 +6851,6 @@ h1,h3 {
     line-height: 12px;
 }
 
-#header .inner .top_mypage:hover .top_sub,#header .inner span:hover .top_sub {
-    display: block;
-}
-
-#header .inner .top_mypage .top_sub {
-    border-top: 1px solid #ebebeb !important;
-    top: 48px !important;
-}
-
 #header .inner .top_sub {
     position: absolute;
     top: 62px;
@@ -7083,35 +7025,6 @@ body.center .xans-layout-multishoplist.list button span {
 
 body.center .xans-layout-multishoplist.list > ul {
     margin: 10px 0 0 0;
-}
-
-.rightbar {
-    display: none;
-    width: 34px;
-    box-sizing: border-box;
-    text-align: center;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 80;
-}
-
-.rightbar a {
-    font-size: 20px;
-    display: block;
-    padding: 5px 0;
-}
-
-.rightbar .r_kakao {
-    display: block;
-    background: #fae100;
-    height: 34px;
-    height: 34px;
-    line-height: 34px;
-    border-radius: 50%;
-    padding: 9px 0;
-    box-sizing: border-box;
-    margin: 0 0 5px;
 }
 
 #footer .inner {

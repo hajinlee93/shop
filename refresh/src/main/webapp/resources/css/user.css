@@ -2958,11 +2958,11 @@ div.ec-base-help ul li {
 
 .ec-base-tab.grid7 .menu li {
     width: 14.8%;
-    width: 15% \0/;
+    width: 15%;
 }
 
 .ec-base-tab.grid7 .menu li:first-child {
-    width: 13% \0/;
+    width: 13%;
 }
 
 .ec-base-tab.gFlex .menu {
@@ -7171,16 +7171,12 @@ h1,h3 {
     height: 10px;
 }
 
-#header .inner .top_insta a {
-    background: url('/web/upload/day224/pc_insta_border.png');
-}
-
 #header .top_cart > a {
-    background: url('/web/upload/day224/pc_icon_cart.png');
+    background: url('/resources/img/icon/ic_cart.svg');
 }
 
 #header .top_mypage > a {
-    background: url('/web/upload/day224/pc_icon_mypage.png');
+    background: url('/resources/img/icon/ic_user.svg');
 }
 
 #header {
@@ -7266,10 +7262,10 @@ h1,h3 {
     text-align: center;
     line-height: 15px;
 }
-
+/* 
 #header .inner .top_mypage > a {
     width: 21px
-}
+} */
 
 #header .inner .top_search {
     width: 150px;
@@ -7663,35 +7659,6 @@ body.center .xans-layout-multishoplist.list button span {
 
 body.center .xans-layout-multishoplist.list > ul {
     margin: 10px 0 0 0;
-}
-
-.rightbar {
-    display: none;
-    width: 34px;
-    box-sizing: border-box;
-    text-align: center;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 80;
-}
-
-.rightbar a {
-    font-size: 20px;
-    display: block;
-    padding: 5px 0;
-}
-
-.rightbar .r_kakao {
-    display: block;
-    background: #fae100;
-    height: 34px;
-    height: 34px;
-    line-height: 34px;
-    border-radius: 50%;
-    padding: 9px 0;
-    box-sizing: border-box;
-    margin: 0 0 5px;
 }
 
 #footer .inner {

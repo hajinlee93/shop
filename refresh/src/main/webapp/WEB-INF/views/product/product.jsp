@@ -3038,11 +3038,6 @@
 	<hr class="layout" />
 </div>
 <hr class="layout" />
-<div class="rightbar">
-	<!--    <a href="/" target=_blank class="r_kakao"><img src="/web/upload/category/editor/2024/03/05/efc3c9106c33e4ac2521262553622b01.png"></a>-->
-	<a href="#top"><i class="fa fa-angle-up"></i></a> <a href="#footer"><i
-		class="fa fa-angle-down"></i></a>
-</div>
 <%@ include file="../common/footer.jsp"%>
 </body>
 </html>
