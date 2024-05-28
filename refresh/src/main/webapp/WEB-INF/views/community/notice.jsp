@@ -10,9 +10,8 @@
 			<div class="all_width">
 
 				<div
-					class="xans-element- xans-board xans-board-listpackage-1002 xans-board-listpackage xans-board-1002 ">
-					<div
-						class="xans-element- xans-board xans-board-title-1002 xans-board-title xans-board-1002 ">
+					class="xans-element- xans-board xans-board-listpackage-1002 xans-board-listpackage xans-board-1002">
+					<div class="xans-element- xans-board xans-board-title-1002 xans-board-title xans-board-1002">
 						<div class="path">
 							<span>현재 위치</span>
 							<ol>
@@ -42,49 +41,34 @@
 							<caption>게시판 목록</caption>
 							<colgroup
 								class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
-								<col style="width: 70px;" />
-								<col style="width: 135px;" class="displaynone" />
-								<col style="width: auto;" />
-								<col style="width: 104px;" />
-								<col style="width: 77px;" class="" />
-								<col style="width: 55px;" class="displaynone" />
-								<col style="width: 55px;" class="displaynone" />
-								<col style="width: 80px;" class="displaynone" />
+								<col style="width: 70px;"/>
+								<col style="width: auto;"/>
+								<col style="width: 104px;"/>
+								<col style="width: 77px;"/>
 							</colgroup>
 							<thead
 								class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
 								<tr style="">
 									<th scope="col">번호</th>
-									<th scope="col" class="displaynone">카테고리</th>
 									<th scope="col">제목</th>
 									<th scope="col">작성자</th>
-									<th scope="col" class="">작성일</th>
-									<th scope="col" class="displaynone">조회</th>
-									<th scope="col" class="displaynone">추천</th>
-									<th scope="col" class="displaynone">평점</th>
+									<th scope="col">작성일</th>
 								</tr>
 							</thead>
-							<tbody
-								class="xans-element- xans-board xans-board-notice-1002 xans-board-notice xans-board-1002 center">
-								<!--
-                    $count = 20
-                    $login_page_url = /member/login.html
-                    $deny_access_url = /index.html
-                -->
-								<tr style="background-color: #FFFFFF; color: #555555;"
-									class="xans-record-">
+							<tbody class="xans-element- xans-board xans-board-notice-1002 xans-board-notice xans-board-1002 center" id="noticeTbl">
+								<tr style="background-color: #FFFFFF; color: #555555;" class="xans-record-">
 									<td>공지</td>
 									<td class="displaynone"></td>
-									<td class="subject left txtBreak"><strong> <a
-											href="/list_detail.do" style="color: #555555;">네이버페이
-												반품 공지사항</a> <span class="txtInfo"></span></strong></td>
+									<td class="subject left txtBreak">
+										<strong> 
+											<a href="/list_detail.do" style="color: #555555;">네이버페이 반품 공지사항</a>
+											<span class="txtInfo"></span>
+										</strong>
+									</td>
 									<td>룩플 LOOKPLE</td>
-									<td class=""><span class="txtNum">2021-08-03</span></td>
-									<td class="displaynone"><span class="txtNum">4153</span></td>
-									<td class="displaynone"><span class="txtNum">0</span></td>
-									<td class="displaynone"><img
-										src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif"
-										alt="0점" /></td>
+									<td>
+										<span class="txtNum">2021-08-03</span>
+									</td>
 								</tr>
 								<tr style="background-color: #FFFFFF; color: #555555;"
 									class="xans-record-">
@@ -113,26 +97,29 @@
 												공지사항</a> <span class="txtInfo"></span></strong></td>
 									<td>룩플(Lookple)</td>
 									<td class=""><span class="txtNum">2018-07-30</span></td>
-									<td class="displaynone"><span class="txtNum">553</span></td>
-									<td class="displaynone"><span class="txtNum">0</span></td>
-									<td class="displaynone"><img
-										src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif"
-										alt="0점" /></td>
 								</tr>
-								<tr style="background-color: #FFFFFF; color: #555555;"
-									class="xans-record-">
+								<tr style="background-color: #FFFFFF; color: #555555;" class="xans-record-">
 									<td>공지</td>
 									<td class="displaynone"></td>
-									<td class="subject left txtBreak"><strong> <a
-											href="/article/notice/1/47/" style="color: #555555;">휴대폰
-												결제 취소 공지사항</a> <span class="txtInfo"></span></strong></td>
+									<td class="subject left txtBreak">
+										<strong>
+											<a href="/article/notice/1/47/" style="color: #555555;">휴대폰결제 취소 공지사항</a>
+											<span class="txtInfo"></span>
+										</strong>
+									</td>
 									<td>룩플(Lookple)</td>
-									<td class=""><span class="txtNum">2018-06-04</span></td>
-									<td class="displaynone"><span class="txtNum">477</span></td>
-									<td class="displaynone"><span class="txtNum">0</span></td>
-									<td class="displaynone"><img
-										src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif"
-										alt="0점" /></td>
+									<td class="">
+										<span class="txtNum">2018-06-04</span>
+									</td>
+									<td class="displaynone">
+										<span class="txtNum">477</span>
+									</td>
+									<td class="displaynone">
+										<span class="txtNum">0</span>
+									</td>
+									<td class="displaynone">
+										<img src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif" alt="0점" />
+									</td>
 								</tr>
 								<tr style="background-color: #FFFFFF; color: #555555;"
 									class="xans-record-">
@@ -164,34 +151,22 @@
 					</div>
 				</div>
 
-
 				<form id="boardSearchForm" name="" action="/board/notice/1"
 					method="get" target="_top" enctype="multipart/form-data">
-					<input id="board_no" name="board_no" value="1" type="hidden" /> <input
-						id="page" name="page" value="1" type="hidden" /> <input
-						id="board_sort" name="board_sort" value="" type="hidden" />
-					<div
-						class="xans-element- xans-board xans-board-search-1002 xans-board-search xans-board-1002 ">
+					<input id="board_no" name="board_no" value="1" type="hidden" /> 
+					<input id="page" name="page" value="1" type="hidden" /> 
+					<input id="board_sort" name="board_sort" value="" type="hidden" />
+					<div class="xans-element- xans-board xans-board-search-1002 xans-board-search xans-board-1002 ">
 						<fieldset class="boardSearch">
 							<legend>게시물 검색</legend>
 							<p>
-								<select id="search_date" name="search_date" fw-filter=""
-									fw-label="" fw-msg="">
-									<option value="week">일주일</option>
-									<option value="month">한달</option>
-									<option value="month3">세달</option>
-									<option value="all">전체</option>
-								</select> <select id="search_key" name="search_key" fw-filter=""
-									fw-label="" fw-msg="">
+								<select id="search_key" name="search_key">
 									<option value="subject">제목</option>
 									<option value="content">내용</option>
-									<option value="writer_name">글쓴이</option>
-									<option value="member_id">아이디</option>
-									<option value="nick_name">별명</option>
-								</select> <input id="search" name="search" fw-filter="" fw-label=""
-									fw-msg="" class="inputTypeText" placeholder="" value=""
-									type="text" /> <a href="#none" class="btnEmFix"
-									onclick="BOARD.form_submit('boardSearchForm');">찾기</a>
+									<option value="userName">작성자</option>
+								</select>
+								<input type="text" id="search" name="search" class="inputTypeText"/>
+								<a href="#none" class="btnEmFix">찾기</a>
 							</p>
 						</fieldset>
 					</div>
@@ -205,7 +180,49 @@
 	</div>
 	<hr class="layout" />
 </div>
-<hr class="layout" />
+<hr class="layout"/>
 <%@ include file="../common/footer.jsp"%>
 </body>
+<script type="text/javascript">
+const noticeInit = {
+	noticeSearch : function(){
+		
+		let dataUrl = "noticeSearch.do";	//매핑 URL
+		let dataParam = {};					//파라미터
+		
+		init.ajaxOriginCall(dataUrl, dataParam, noticeInit.noticeCallback);
+	},
+	
+	noticeCallback : function(resp){
+		//console.log("noticeCallback _ resp", resp);
+		
+		let noticeList = resp.list;
+		
+		$.each(noticeList, function(idx, val){
+			console.log(idx, val);
+		});
+		
+		$('#noticeTbl').empty();
+		
+		//let contentHTML = "";
+		//
+		//contentHTML += "<tr style='background-color: #FFFFFF; color: #555555;' class='xans-record-'>";
+		//contentHTML += "<td>"+ (idx + 1) +"</td>";
+		//contentHTML += "<td class='subject left txtBreak'>";
+		//contentHTML += "<strong>";
+		//contentHTML += "<a href='/list_detail.do' style='color: #555555;'>네이버페이 반품 공지사항</a>";
+		//contentHTML += "<span class='txtInfo'></span>";
+		//contentHTML += "</strong>";
+		//contentHTML += "</td>";
+		//contentHTML += "<td>룩플 LOOKPLE</td>";
+		//contentHTML += "<td>";
+		//contentHTML += "<span class='txtNum'>2021-08-03</span>";
+		//contentHTML += "</td>";
+		//contentHTML += "</tr>";
+		
+	}
+};
+
+noticeInit.noticeSearch();
+</script>
 </html>
