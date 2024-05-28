@@ -11,7 +11,17 @@ import number.vo.NumberVO;
 public class noticeController {
 	
    @RequestMapping("notice.do")
-   public String main(HttpServletRequest request, NumberVO numberVo, Model model) {
+   public String shopNotice(HttpServletRequest request) {
       return "/community/notice";
+   }
+   
+   @RequestMapping("faq.do")
+   public String shopFaq(HttpServletRequest request) {
+      return "/community/faq";
+   }
+   
+   @RequestMapping("qna.do")
+   public String shopQna(HttpServletRequest request) {
+      return "/community/qna";
    }
 }
