@@ -58,7 +58,7 @@
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수" />
 									</th>
 									<td>
-										<input id="member_id" name="member_id" class="inputTypeText" type="text" /> 
+										<input id="userId" name="userId" data-info="아이디" class="inputTypeText" type="text" /> 
 										<span id="idMsg"></span> (영문소문자/숫자, 4~16자)
 									</td>
 								</tr>
@@ -68,7 +68,7 @@
 									</th>
 									<td>
 										<div class="eTooltip">
-											<input id="passwd" autocomplete="off" maxlength="16" type="password" />
+											<input id="userPw" autocomplete="off" data-info="비밀번호" maxlength="16" type="password" />
 											<div class="ec-base-tooltip typeUpper">
 												<div class="content">
 													<strong class="txtWarn">※ 비밀번호 입력 조건</strong>
@@ -552,7 +552,7 @@
 						</ul>
 					</div>
 					<div class="ec-base-button">
-						<a href="#none" class="btnSubmitFix sizeM">회원가입</a>
+						<a href="#none" class="btnSubmitFix sizeM" id="joinShop">회원가입</a>
 					</div>
 				</div>
 			</div>
@@ -567,14 +567,33 @@
 </html>
 <script>
 $(document).ready(function() {
-	// 요소가 포커드 되면 이벤트 발생
-	document.getElementById("passwd").addEventListener("focus", () => {
+	//비밀번호 포커스시 툴팁 오픈
+	document.getElementById("userPw").addEventListener("focus", () => {
 	  $(".typeUpper").css("display","block");
 	});
 
-	// 요소가 블러 되면 이벤트 발생
-	document.getElementById("passwd").addEventListener("blur", () => {
+	//비밀번호 포커스 아웃 시 툴팁 닫기
+	document.getElementById("userPw").addEventListener("blur", () => {
 		$(".typeUpper").css("display","");	
+	});
+	
+	//회원가입 버튼 클릭
+	$("#joinShop").on("click",function(){
+		let info = ["userId","userPw"];								// 필수 항목 아이디 목록
+		
+		// null 체크
+		$.each(info, function(index, value){
+			let listValue = $("#"+value).val();						// 필수 항목 value
+			let listInfo =  $("#"+value).attr("data-info");			// 필수 항목 정보
+			
+			if(listValue == "" || listValue == undefined || listValue == "undefined"){
+				swal("회원가입 불가",listInfo+" 없음","error");
+				$("#"+value).focus();
+				return false;
+			}
+			return;
+		})
+		
 	});
 });
 

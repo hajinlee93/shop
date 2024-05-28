@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/cart.css" />
 <link rel="stylesheet" type="text/css" href="/resources/css/list_detail.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
 <script src="/resources/js/common.js"></script>

@@ -11,5 +11,6 @@
 	<typeAliases>
 		<typeAlias alias="numberVo" type="number.vo.NumberVO"/>
 		<typeAlias alias="loginVo" type="login.vo.LoginVO"/>
+		<typeAlias alias="noticeVo" type="community.vo.NoticeVO"/>
 	</typeAliases>
 </configuration>
