@@ -38,5 +38,3 @@ const init = {
 		});
 	}
 };
-
-init.ajaxTestCall();

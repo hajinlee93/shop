@@ -21,6 +21,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
+<script src="/resources/js/common.js"></script>
 <style type="text/css"></style>
 <title>shop</title>
 </head>
