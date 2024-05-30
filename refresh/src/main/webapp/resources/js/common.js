@@ -38,3 +38,23 @@ const init = {
 		});
 	}
 };
+
+/*
+인풋박스 내부 리플레이스 함수
+
+id => 해당 인풋박스 아이디
+type => onlyNum (숫자만) , onlyString (문자만)
+
+*/
+function inputKeyup(id,type){
+	let text = $("#"+id).val();
+	let reg ="";
+	
+	if(type == "onlyNum"){
+		reg = /[ㄱ-ㅎㅏ-ㅣ가-힣a-zA-Z`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/ ]/gim; //한글,영어 대소문자, 특수문자, 괄호, 점, 공백, 번호 모두 제거		
+	}else if(type == "onlyString"){
+		reg = /[0-9`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/ ]/gim; // 특수문자, 괄호, 점, 공백, 번호 모두 제거		
+	}
+	
+	$("#"+id).val(text.replace(reg, ""));
+}

@@ -89,18 +89,18 @@
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수" />
 									</th>
 									<td>
-										<input id="user_passwd_confirm" name="user_passwd_confirm" autocomplete="off" maxlength="16" value="" type="password" />
+										<input id="userPwChk" data-info="비밀번호 확인" name="user_passwd_confirm" autocomplete="off" maxlength="16" value="" type="password" />
 										<span id="pwConfirmMsg"></span>
 									</td>
 								</tr>
 								
 								<tr>
-									<th scope="row" id="nameTitle">이름 
+									<th scope="row">이름 
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수" />
 									</th>
 									<td>
 										<span id="nameContents">
-											<input id="name" name="name" class="ec-member-name" maxlength="30" type="text" />
+											<input id="userName" data-info="이름" name="userName" class="ec-member-name" maxlength="30" type="text" data-type="onlyString" onkeyup="inputKeyup($(this).attr('name'),$(this).attr('data-type'))"/>
 										</span>
 										<span id="under14Msg" class="displaynone">14세 미만 사용자는 법정대리인 동의가 필요합니다.</span>
 									</td>
@@ -112,40 +112,22 @@
 									<td>
 										<ul class="ec-address">
 											<li id="join_zipcode_wrap" class="ec-address-zipcode" style="">
-												<input id="postcode1" name="postcode1" placeholder="우편번호" class="inputTypeText" type="text" maxlength="14">
-												<button id="postBtn" class="btnBasic" type="button" style="cursor: pointer;">주소검색</button> 
-												<span class="ec-base-label">
-													<input id="nozip" name="nozip" class="displaynone" type="checkbox" disabled="" style="display: none; cursor: unset;"> 
-													<label id="join_zipcode_check_label" for="nozip" class="displaynone" disabled="" style="display: none;">우편번호 없음</label>
-												</span>
-												<span id="join_zipcodeNotFoundMsg_wrap" class="ec-base-label displaynone"> 우편번호가 정확하지 않습니다. 다시 확인해 주세요. </span>
+												<input id="zipcode" data-info="우편번호" name="zipcode" placeholder="우편번호" class="inputTypeText" type="text" maxlength="14">
+												<button id="postBtn" class="btnBasic" type="button" style="cursor: pointer;">주소검색</button>
 											</li>
 											<li id="join_baseAddr_wrap" class="" style="">
-												<input id="addr1" name="addr1" placeholder="기본주소" class="inputTypeText" type="text" size="60" maxlength="100" style="" readonly="" fw-label="기본주소"></li>
+												<input id="address" data-info="기본주소" name="address" placeholder="기본주소" class="inputTypeText" type="text" size="60" maxlength="100"></li>
 											<li id="join_detailAddr_wrap" class="" style="">
-											<input id="addr2" name="addr2" placeholder="나머지 주소(선택 입력 가능)" fw-filter="" class="inputTypeText" type="text" size="60" maxlength="255" style="" fw-label="나머지 주소(선택 입력 가능)"></li>
+											<input id="detailed_addres" data-info="상세주소" name="detailed_addres" placeholder="나머지 주소(선택 입력 가능)" fw-filter="" class="inputTypeText" type="text" size="60" maxlength="255" style="" fw-label="나머지 주소(선택 입력 가능)"></li>
 										</ul>
 									</td>
 								</tr>
-								<tr class="">
-									<th scope="row">일반전화 
-										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="displaynone" alt="필수">
-									</th>
-									<td>
-										<select id="phone1" name="phone[]" fw-filter="isNumber&amp;isNumber" >
-											<option value="070">070</option>
-											<option value="010">010</option>
-										</select>-
-										<input id="phone2" name="phone[]" maxlength="4" type="text">-
-										<input id="phone3" name="phone[]" maxlength="4" type="text">
-									</td>
-								</tr>
-								<tr class="">
+								<tr>
 									<th scope="row">휴대전화 
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수">
 									</th>
 									<td>
-										<select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="">
+										<select id="phone1" data-info="휴대전화" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="">
 												<option value="010">010</option>
 												<option value="011">011</option>
 												<option value="016">016</option>
@@ -153,8 +135,8 @@
 												<option value="018">018</option>
 												<option value="019">019</option>
 										</select>-
-										<input id="mobile2" name="mobile[]" maxlength="4" type="text">-
-										<input id="mobile3" name="mobile[]" maxlength="4" type="text">
+										<input id="phone2" data-info="휴대전화" name="mobile[]" maxlength="4" type="text">-
+										<input id="phone3" data-info="휴대전화" name="mobile[]" maxlength="4" type="text">
 										<button type="button" id="btn_action_verify_mobile" class="btnNormal displaynone">인증번호받기</button>
 										<p class="txtWarn gBlank5 displaynone" id="result_send_verify_mobile_fail"></p>
 										<ul class="txtInfo gBlank5 displaynone" id="result_send_verify_mobile_success"> </ul>
@@ -165,7 +147,7 @@
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수">
 									</th>
 									<td>
-										<input id="email1" name="email1" type="text"> 
+										<input id="email" data-info="이메일" name="email1" type="text"> 
 										<span id="emailMsg"></span>
 									</td>
 								</tr>
@@ -190,16 +172,6 @@
 									<label for="is_sex0">남자</label> 
 									<input id="is_sex1" name="is_sex" value="F" type="radio" />
 									<label for="is_sex1">여자</label></td>
-								</tr>
-								<tr>
-									<th scope="row">생년월일 
-										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="displaynone" alt="필수" />
-									</th>
-									<td>
-										<input id="birth_year" name="birth_year" class="inputTypeText" maxlength="4" type="text" /> 년 
-										<input id="birth_month" name="birth_month" class="inputTypeText" maxlength="2" type="text" /> 월 
-										<input id="birth_day" name="birth_day" class="inputTypeText" maxlength="2" type="text" /> 일 
-									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -579,22 +551,39 @@ $(document).ready(function() {
 	
 	//회원가입 버튼 클릭
 	$("#joinShop").on("click",function(){
-		let info = ["userId","userPw"];								// 필수 항목 아이디 목록
+		let password = $("#userPw").val();
+		let passwordChk = $("#userPwChk").val();
 		
 		// null 체크
+		let info = ["userId","userPw","userPwChk","userName","zipcode","phone1","phone2","phone3","email"];		// 필수 항목 아이디 목록
+		
 		$.each(info, function(index, value){
 			let listValue = $("#"+value).val();						// 필수 항목 value
 			let listInfo =  $("#"+value).attr("data-info");			// 필수 항목 정보
 			
 			if(listValue == "" || listValue == undefined || listValue == "undefined"){
-				swal("회원가입 불가",listInfo+" 없음","error");
-				$("#"+value).focus();
+				swal ({ title: '회원가입 불가',
+	                text: listInfo+" 없음",
+	                icon: 'error'}).then(function(){
+	                   $("#"+value).focus();   
+	                });
 				return false;
 			}
 			return;
-		})
-		
+		});
+
+		//비밀번호 확인 동일 여부
+		if(password != passwordChk) {
+			swal ({ title: '회원가입 불가',
+                text: "비밀번호와 비밀번호 확인 동일하지 않음",
+                icon: 'error'}).then(function(){
+                	$("#userPw").focus();   
+           		});
+			return;
+		}
 	});
+	
+	
 });
 
 
