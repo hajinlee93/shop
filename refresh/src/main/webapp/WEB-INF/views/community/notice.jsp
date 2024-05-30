@@ -33,21 +33,18 @@
 						<p class="imgArea"></p>
 					</div>
 					<div class="boardSort">
-						<span
-							class="xans-element- xans-board xans-board-replysort-1002 xans-board-replysort xans-board-1002 "></span>
+						<span class="xans-element- xans-board xans-board-replysort-1002 xans-board-replysort xans-board-1002 "></span>
 					</div>
 					<div class="ec-base-table typeList ">
 						<table border="1" summary="">
 							<caption>게시판 목록</caption>
-							<colgroup
-								class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
+							<colgroup class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
 								<col style="width: 70px;"/>
 								<col style="width: auto;"/>
 								<col style="width: 104px;"/>
 								<col style="width: 77px;"/>
 							</colgroup>
-							<thead
-								class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
+							<thead class="xans-element- xans-board xans-board-listheader-1002 xans-board-listheader xans-board-1002 ">
 								<tr style="">
 									<th scope="col">번호</th>
 									<th scope="col">제목</th>
@@ -56,121 +53,27 @@
 								</tr>
 							</thead>
 							<tbody class="xans-element- xans-board xans-board-notice-1002 xans-board-notice xans-board-1002 center" id="noticeTbl">
-								<tr style="background-color: #FFFFFF; color: #555555;" class="xans-record-">
-									<td>공지</td>
-									<td class="displaynone"></td>
-									<td class="subject left txtBreak">
-										<strong> 
-											<a href="/list_detail.do" style="color: #555555;">네이버페이 반품 공지사항</a>
-											<span class="txtInfo"></span>
-										</strong>
-									</td>
-									<td>룩플 LOOKPLE</td>
-									<td>
-										<span class="txtNum">2021-08-03</span>
-									</td>
-								</tr>
-								<tr style="background-color: #FFFFFF; color: #555555;"
-									class="xans-record-">
-									<td>공지</td>
-									<td class="displaynone"></td>
-									<td class="subject left txtBreak"><strong> <a
-											href="/article/notice/1/7914/" style="color: #555555;">상품
-												치수 측정 공지사항</a> <img
-											src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif"
-											alt="파일첨부" class="ec-common-rwd-image" /> <span
-											class="txtInfo"></span></strong></td>
-									<td>룩플 LOOKPLE</td>
-									<td class=""><span class="txtNum">2019-08-06</span></td>
-									<td class="displaynone"><span class="txtNum">5322</span></td>
-									<td class="displaynone"><span class="txtNum">0</span></td>
-									<td class="displaynone"><img
-										src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif"
-										alt="0점" /></td>
-								</tr>
-								<tr style="background-color: #FFFFFF; color: #555555;"
-									class="xans-record-">
-									<td>공지</td>
-									<td class="displaynone"></td>
-									<td class="subject left txtBreak"><strong> <a
-											href="/article/notice/1/1197/" style="color: #555555;">수제화/핸드메이드
-												공지사항</a> <span class="txtInfo"></span></strong></td>
-									<td>룩플(Lookple)</td>
-									<td class=""><span class="txtNum">2018-07-30</span></td>
-								</tr>
-								<tr style="background-color: #FFFFFF; color: #555555;" class="xans-record-">
-									<td>공지</td>
-									<td class="displaynone"></td>
-									<td class="subject left txtBreak">
-										<strong>
-											<a href="/article/notice/1/47/" style="color: #555555;">휴대폰결제 취소 공지사항</a>
-											<span class="txtInfo"></span>
-										</strong>
-									</td>
-									<td>룩플(Lookple)</td>
-									<td class="">
-										<span class="txtNum">2018-06-04</span>
-									</td>
-									<td class="displaynone">
-										<span class="txtNum">477</span>
-									</td>
-									<td class="displaynone">
-										<span class="txtNum">0</span>
-									</td>
-									<td class="displaynone">
-										<img src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif" alt="0점" />
-									</td>
-								</tr>
-								<tr style="background-color: #FFFFFF; color: #555555;"
-									class="xans-record-">
-									<td>공지</td>
-									<td class="displaynone"></td>
-									<td class="subject left txtBreak"><strong> <a
-											href="/article/notice/1/11/" style="color: #555555;">배송/환불/교환&반품
-												공지사항</a> <span class="txtInfo"></span></strong></td>
-									<td>룩플(Lookple)</td>
-									<td class=""><span class="txtNum">2018-05-09</span></td>
-									<td class="displaynone"><span class="txtNum">3701</span></td>
-									<td class="displaynone"><span class="txtNum">0</span></td>
-									<td class="displaynone"><img
-										src="//img.echosting.cafe24.com/skin/base/board/ico_point0.gif"
-										alt="0점" /></td>
-								</tr>
+								
 							</tbody>
 						</table>
-						<p
-							class="xans-element- xans-board xans-board-empty-1002 xans-board-empty xans-board-1002 message  ">검색결과가
-							없습니다.</p>
-					</div>
-					<div
-						class="xans-element- xans-board xans-board-buttonlist-1002 xans-board-buttonlist xans-board-1002 ec-base-button displaynone ">
-						<span class="gRight"> <a
-							href="/board/free/write.html?board_no=1"
-							class="btnSubmitFix sizeS displaynone">글쓰기</a>
-						</span>
+						<p class="xans-element- xans-board xans-board-empty-1002 xans-board-empty xans-board-1002 message" id="nonNotice">검색결과가 없습니다.</p>
 					</div>
 				</div>
-
-				<form id="boardSearchForm" name="" action="/board/notice/1"
-					method="get" target="_top" enctype="multipart/form-data">
-					<input id="board_no" name="board_no" value="1" type="hidden" /> 
-					<input id="page" name="page" value="1" type="hidden" /> 
-					<input id="board_sort" name="board_sort" value="" type="hidden" />
-					<div class="xans-element- xans-board xans-board-search-1002 xans-board-search xans-board-1002 ">
-						<fieldset class="boardSearch">
-							<legend>게시물 검색</legend>
-							<p>
-								<select id="search_key" name="search_key">
-									<option value="subject">제목</option>
-									<option value="content">내용</option>
-									<option value="userName">작성자</option>
-								</select>
-								<input type="text" id="search" name="search" class="inputTypeText"/>
-								<a href="#none" class="btnEmFix">찾기</a>
-							</p>
-						</fieldset>
-					</div>
-				</form>
+				<br/>
+				<div class="xans-element- xans-board xans-board-search-1002 xans-board-search xans-board-1002">
+					<fieldset class="boardSearch">
+						<legend>게시물 검색</legend>
+						<p>
+							<select id="searchKey" name="searchKey">
+								<option value="title">제목</option>
+								<option value="content">내용</option>
+							</select>
+							<input type="text" id="searchText" name="searchText" class="inputTypeText"/>
+							<a href="#none" class="btnEmFix" onclick="noticeInit.noticeSearch()">찾기</a>
+						</p>
+					</fieldset>
+				</div>
+				
 				<!-- 관리자 전용 메뉴 -->
 
 				<!-- // 관리자 전용 메뉴 -->
@@ -190,35 +93,55 @@ const noticeInit = {
 		let dataUrl = "noticeSearch.do";	//매핑 URL
 		let dataParam = {};					//파라미터
 		
+		//if(type && searchText){
+		//	dataParam.type = searchText;
+		//}
+		
+		let searchText = $('#searchText').val();
+		let searchKey = $('#searchKey').val();
+		
+		if(searchText && searchText != ""){
+			dataParam.searcyType = searchKey;
+			dataParam.searchText = searchText;
+		}
+		
 		init.ajaxOriginCall(dataUrl, dataParam, noticeInit.noticeCallback);
 	},
 	
 	noticeCallback : function(resp){
-		//console.log("noticeCallback _ resp", resp);
 		
+		$('#noticeTbl').empty();	//공지사항 리스트 초기화
 		let noticeList = resp.list;
 		
-		$.each(noticeList, function(idx, val){
-			console.log(idx, val);
-		});
+		console.log("noticeList >> " , noticeList);
 		
-		$('#noticeTbl').empty();
-		
-		//let contentHTML = "";
-		//
-		//contentHTML += "<tr style='background-color: #FFFFFF; color: #555555;' class='xans-record-'>";
-		//contentHTML += "<td>"+ (idx + 1) +"</td>";
-		//contentHTML += "<td class='subject left txtBreak'>";
-		//contentHTML += "<strong>";
-		//contentHTML += "<a href='/list_detail.do' style='color: #555555;'>네이버페이 반품 공지사항</a>";
-		//contentHTML += "<span class='txtInfo'></span>";
-		//contentHTML += "</strong>";
-		//contentHTML += "</td>";
-		//contentHTML += "<td>룩플 LOOKPLE</td>";
-		//contentHTML += "<td>";
-		//contentHTML += "<span class='txtNum'>2021-08-03</span>";
-		//contentHTML += "</td>";
-		//contentHTML += "</tr>";
+		if(noticeList.length > 0){
+			
+			$('#nonNotice').hide();
+			$.each(noticeList, function(idx, val){
+				
+				let contentHTML = "";
+				
+				contentHTML += "<tr style='background-color: #FFFFFF; color: #555555;' class='xans-record-'>";
+				contentHTML += "<td>"+ (idx + 1) +"</td>";
+				contentHTML += "<td class='subject left txtBreak'>";
+				contentHTML += "<strong>";
+				contentHTML += "<a href='/list_detail.do' style='color: #555555;'>"+ val.noticeTitle +"</a>";
+				contentHTML += "<span class='txtInfo'></span>";
+				contentHTML += "</strong>";
+				contentHTML += "</td>";
+				contentHTML += "<td>관리자</td>";
+				contentHTML += "<td>";
+				contentHTML += "<span class='txtNum'>"+ val.udtTime +"</span>";
+				contentHTML += "</td>";
+				contentHTML += "</tr>";
+				
+				$('#noticeTbl').append(contentHTML);
+				
+			});
+		} else {
+			$('#nonNotice').show();
+		}
 		
 	}
 };

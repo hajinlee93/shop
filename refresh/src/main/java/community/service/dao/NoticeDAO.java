@@ -19,6 +19,10 @@ public class NoticeDAO {
 
 	//공지사항 리스트 조회
 	public List<NoticeVO> getNoticeSearch(NoticeVO noticeVo) {
+		
+		System.out.println("noticeVo  searchType  >>>> " + noticeVo.getSearchType());
+		System.out.println("noticeVo  searchText  >>>> " + noticeVo.getSearchText());
+		
 		List<NoticeVO> list = sqlSession.selectList("NoticeDAO.noticeSearch", noticeVo);
 		return list;
 	}
