@@ -20,6 +20,7 @@
 <link rel="stylesheet" type="text/css" href="/resources/css/list_detail.css" />
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- 주소검색 --> <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script src="/resources/js/swiper_min.js"></script>
 <script src="/resources/js/min.js"></script>
 <script src="/resources/js/common.js"></script>

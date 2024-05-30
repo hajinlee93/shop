@@ -113,7 +113,7 @@
 										<ul class="ec-address">
 											<li id="join_zipcode_wrap" class="ec-address-zipcode" style="">
 												<input id="zipcode" data-info="우편번호" name="zipcode" placeholder="우편번호" class="inputTypeText" type="text" maxlength="14">
-												<button id="postBtn" class="btnBasic" type="button" style="cursor: pointer;">주소검색</button>
+												<button id="postBtn" class="btnBasic" type="button" onClick="u_execDaumPostcode()"style="cursor: pointer;">주소검색</button>
 											</li>
 											<li id="join_baseAddr_wrap" class="" style="">
 												<input id="address" data-info="기본주소" name="address" placeholder="기본주소" class="inputTypeText" type="text" size="60" maxlength="100"></li>
@@ -135,8 +135,8 @@
 												<option value="018">018</option>
 												<option value="019">019</option>
 										</select>-
-										<input id="phone2" data-info="휴대전화" name="mobile[]" maxlength="4" type="text">-
-										<input id="phone3" data-info="휴대전화" name="mobile[]" maxlength="4" type="text">
+										<input id="phone2" data-info="휴대전화" name="phone2" maxlength="4" type="text"  data-type="onlyNum" onkeyup="inputKeyup($(this).attr('name'),$(this).attr('data-type'))">-
+										<input id="phone3" data-info="휴대전화" name="phone3" maxlength="4" type="text"  data-type="onlyNum" onkeyup="inputKeyup($(this).attr('name'),$(this).attr('data-type'))">
 										<button type="button" id="btn_action_verify_mobile" class="btnNormal displaynone">인증번호받기</button>
 										<p class="txtWarn gBlank5 displaynone" id="result_send_verify_mobile_fail"></p>
 										<ul class="txtInfo gBlank5 displaynone" id="result_send_verify_mobile_success"> </ul>
@@ -147,7 +147,14 @@
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" alt="필수">
 									</th>
 									<td>
-										<input id="email" data-info="이메일" name="email1" type="text"> 
+										<input id="email" data-info="이메일" name="email" type="text" data-type="numString" onkeyup="inputKeyup($(this).attr('name'),$(this).attr('data-type'))"> @ 
+										<input id="emailDetail" data-info="이메일" name="emailDetail" type="text" data-type="engDat" onkeyup="inputKeyup($(this).attr('name'),$(this).attr('data-type'))">
+										<select id="email2" data-info="이메일" name="email2">
+												<option value="">직접입력</option>
+												<option value="naver.com">naver.com</option>
+												<option value="gmail.com">gmail.com</option>
+												<option value="hanmail.net">hanmail.net</option>
+										</select>
 										<span id="emailMsg"></span>
 									</td>
 								</tr>
@@ -168,10 +175,11 @@
 									<th scope="row">성별 
 										<img src="//img.echosting.cafe24.com/skin/base/common/ico_required_blue.gif" class="displaynone" alt="필수" /></th>
 									<td>
-									<input id="is_sex0" name="is_sex" value="M" type="radio" />
+									<input id="is_sex0" name="is_sex" value="M" type="radio" onclick="genderdongChk(event);"/>
 									<label for="is_sex0">남자</label> 
-									<input id="is_sex1" name="is_sex" value="F" type="radio" />
+									<input id="is_sex1" name="is_sex" value="F" type="radio" onclick="genderdongChk(event);" />
 									<label for="is_sex1">여자</label></td>
+									<input type="hidden" id="gender"/>
 								</tr>
 							</tbody>
 						</table>
@@ -180,7 +188,7 @@
 					<div class="ec-base-box typeThinBg gStrong">
 						<p>
 							<span class="ec-base-chk">
-								<input type="checkbox" id="sAgreeAllChecked">
+								<input type="checkbox" name="chkdong" id="sAgreeAllChecked" onclick="genderdongChk();">
 								<em class="checkbox"> </em>
 							</span>
 							<label for="sAgreeAllChecked"><strong>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</strong></label>
@@ -448,7 +456,7 @@
 						</div>
 						<p class="check">
 							<span>이용약관에 동의하십니까?</span> 
-							<input id="agree_service_check0" name="agree_service_check[]"  class="ec-base-chk" value="1" type="checkbox" />
+							<input id="agree_service_check0" name="chkdong" class="ec-base-chk" value="1" type="checkbox" onclick="genderdongChk();" />
 							<label for="agree_service_check0">동의함</label>
 						</p>
 					</div>
@@ -492,7 +500,7 @@
 						</div>
 						<p class="check">
 							<span>개인정보 수집 및 이용에 동의하십니까?</span> 
-							<input id="agree_privacy_check0" name="agree_privacy_check[]" class="ec-base-chk" value="1" type="checkbox" />
+							<input id="agree_privacy_check0" name="chkdong" class="ec-base-chk" value="2" type="checkbox" onclick="genderdongChk();"/>
 							<label for="agree_privacy_check0">동의함</label>
 						</p>
 					</div>
@@ -503,7 +511,7 @@
 						</div>
 						<p class="check">
 							<span>개인정보 수집 및 이용에 동의하십니까?</span> 
-							<input id="agree_privacy_optional_check0" name="agree_privacy_optional_check[]" class="ec-base-chk" value="T" type="checkbox" />
+							<input id="agree_privacy_optional_check0" name="chkdong" class="ec-base-chk" value="T" type="checkbox" />
 							<label for="agree_privacy_optional_check0"></label>
 						</p>
 					</div>
@@ -519,7 +527,7 @@
 						</div>
 						<ul class="check">
 							<li class=""><span>이메일 수신을 동의하십니까?</span>
-							<input id="is_news_mail0" name="is_news_mail" class="ec-base-chk" value="T" type="checkbox" />
+							<input id="is_news_mail0" name="chkdong" class="ec-base-chk" value="T" type="checkbox" onclick="genderdongChk();"/>
 							<label for=is_news_mail0>동의함</label></li>
 						</ul>
 					</div>
@@ -538,6 +546,68 @@
 </body>
 </html>
 <script>
+
+//성별 선택시 gender 인풋에 값넣기 / 체크 박스 
+function genderdongChk(event){
+	if(event){
+		 let result = '';
+		  if(event.target.checked)  {
+		    result = event.target.value;
+		  }else {
+		    result = '';
+		  }
+		  
+		  $("#gender").val(result);	 
+	}else{
+		  // 선택된 목록 가져오기
+		  const query = 'input[name="chkdong"]:checked';
+		  const selectedEls = 
+		      document.querySelectorAll(query);
+		  
+		  // 선택된 목록에서 value 찾기
+		  let aresult = '';
+		  selectedEls.forEach((el) => {
+		    aresult += el.value + ' ';
+		  });
+		  
+	}
+}
+
+//다음 주소 찾기 API
+function u_execDaumPostcode() {
+    new daum.Postcode({
+        oncomplete: function(data) {
+            // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+            // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+            // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+            var roadAddr = data.roadAddress; // 도로명 주소 변수
+            var extraRoadAddr = ''; // 참고 항목 변수
+
+            // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+            // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+            if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                extraRoadAddr += data.bname;
+            }
+            // 건물명이 있고, 공동주택일 경우 추가한다.
+            if(data.buildingName !== '' && data.apartment === 'Y'){
+               extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+            }
+            // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+            if(extraRoadAddr !== ''){
+                extraRoadAddr = ' (' + extraRoadAddr + ')';
+            }
+
+            // 우편번호와 주소 정보를 해당 필드에 넣는다.
+            document.getElementById('zipcode').value = data.zonecode;
+            document.getElementById("address").value = roadAddr;
+            document.getElementById("address").value += extraRoadAddr;
+            
+            document.getElementById("detailed_addres").focus();
+        }
+    }).open();
+}
+
 $(document).ready(function() {
 	//비밀번호 포커스시 툴팁 오픈
 	document.getElementById("userPw").addEventListener("focus", () => {
@@ -555,7 +625,7 @@ $(document).ready(function() {
 		let passwordChk = $("#userPwChk").val();
 		
 		// null 체크
-		let info = ["userId","userPw","userPwChk","userName","zipcode","phone1","phone2","phone3","email"];		// 필수 항목 아이디 목록
+		let info = ["userId","userPw","userPwChk","userName","zipcode","phone1","phone2","phone3","email","emailDetail"];		// 필수 항목 아이디 목록
 		
 		$.each(info, function(index, value){
 			let listValue = $("#"+value).val();						// 필수 항목 value
@@ -582,10 +652,14 @@ $(document).ready(function() {
 			return;
 		}
 	});
+    
+	//email 상세주소 선택 값 인풋박스에 넣기
+	$("#email2").on("change",function(){
+		let selected = $(this).val();
+		$("#emailDetail").val(selected);
+	});
 	
 	
 });
-
-
 </script>
 
