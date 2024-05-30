@@ -13,6 +13,10 @@
 		,RGST_TIME	
 		,UDT_TIME			
 	  FROM NOTICE
+	 WHERE 1=1
+	 <if test="searchText != null">
+	 AND (NOTICE_TITLE = #{searchText} OR NOTICE_CONTENT = #{searchText})
+	 </if>
 	 ORDER BY NOTICE_NO DESC
 	</select>
 </mapper>

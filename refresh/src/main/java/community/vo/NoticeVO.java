@@ -10,4 +10,6 @@ public class NoticeVO {
 	String noticeContent ;	//내용
 	String rgstTime	 	 ;	//등록시간
 	String udtTime		 ;	//수정시간
+	String searchType	 ;  //검색타입
+	String searchText	 ;  //검색텍스트
 }

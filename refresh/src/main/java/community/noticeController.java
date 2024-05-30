@@ -47,11 +47,22 @@ public class noticeController {
 		
 		NoticeVO noticeVo = new NoticeVO();
 		
+		String type = request.getParameter("searchType");	//제목, 내용
+		String text = request.getParameter("searchText"); //조회할 텍스트
+		
+		noticeVo.setSearchType(type);
+		noticeVo.setSearchText(text);
+		
 		List<NoticeVO> list = noticeServiceImpl.getNoticeSearch(noticeVo);
 		
 		map.put("list", list);
 	
 		return map;
    }
+	
+	public static boolean isStringEmpty(String str) {        
+		return str == null || str.isEmpty();    
+	}
+	
    
 }
